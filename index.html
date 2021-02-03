@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+ <form action = "" name = "myForm" onsubmit = "aa();">
+<div class="login-box">
+  <h1>SignUp</h1>
+  <div class="textbox">
+    <i class="fas fa-user"></i>
+    <input type="text" placeholder="Username" name="fname">
+  </div>
+  <div class="textbox">
+    <i class="fas fa-user"></i>
+    <input type="text" placeholder="Email" name="email">
+  </div>
+
+  <div class="textbox">
+    <i class="fas fa-lock"></i>
+    <input type="password" placeholder="Password" name="email">
+  </div>
+
+  <input type="submit" class="btn" value="Submit" />
+</div>
+</form>
+<script>
+
+function aa()
+{
+var value1=document.myForm.fname.value;
+var value2=document.myForm.email.value;
+var queryString = "?Thank you " + value1 + "" + value2;
+window.open("inde.html" + queryString);
+}
+</script>
+  </body>
+</html>
